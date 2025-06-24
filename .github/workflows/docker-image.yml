@@ -14,6 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Make build.sh executable
+      run: chmod +x build.sh
+    
     - name: Build the Docker image
       run: docker build -t resume-builder .
 
