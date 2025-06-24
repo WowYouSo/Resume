@@ -20,7 +20,7 @@ RUN sed -i 's|http://archive.ubuntu.com/ubuntu|http://mirror.yandex.ru/ubuntu|g'
 
 WORKDIR /cv
 COPY . .
-
+RUN chmod +x ./build.sh
 RUN fc-cache -fv
 #RUN xelatex -interaction=nonstopmode main.tex
 #
