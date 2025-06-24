@@ -1,0 +1,134 @@
+%-------------------------------------
+% Resum in LaTeX (XeLaTeX)
+% Author:  HF Yuan
+% Project: https://github.com/xyz-yuanhf/yuan-resume
+% Base on: https://github.com/mattyHerzig/mattys_resume
+%          http://www.jianxu.net/en/
+% License: MIT
+%------------------------------------
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage{myresume}  % Style package
+
+% --------------------  START  --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+  \setstretch{0.6}
+  \item {\Calluna (+7) 926-494-11-75}  % Phone number
+  \item {\Calluna romanshum52@gmail.com}  % E-mail address
+\end{flushright}\vspace{-45pt}
+
+\begin{flushleft}  % Rplace here with your name (and identity if required)
+  {\Calluna \fontsize{30pt}{30pt}\selectfont \textsc{Shumilov Roman}} \quad {\Calluna \fontsize{14.5pt}{14.5pt}\selectfont
+  \noindent\rule{\textwidth}{0.4pt}}
+\end{flushleft}
+
+% -------------------- EDUCATION --------------------
+\sectionBlock{
+\section{Education}
+}{
+\eduHeading
+  {Moscow State Budgetary Educational Institution “School 179”}{Moscow, Russia}
+  {Advanced math and programming group}{2019 - 2024}
+\itemListStart
+  \myItem{GPA: 4.62/5.00}
+  \myItem{7-11 school grades}
+\itemListEnd
+
+\eduHeading
+  {The National Research University “Higher School of Economics”}{Moscow, Russia}
+  {BSc “Computer Science and Data Analysis”}{2024 - 2028}
+\itemListStart
+  \myItem{GPA: 8.97/10.00}
+  \myItem{Rank: 4/57}
+\itemListEnd
+
+\eduHeading
+  {Neapolis University Pafos + JetBrains’s sponsorship}{Pafos, Cyprus}
+  {BSc “Computer Science and Artificial Intelligence”}{2024 - 2028}
+\itemListStart
+  \myItem{GPA: 89.81/100.00}
+\itemListEnd
+
+\eduHeading
+  {Olympiad programming extra class, organized by Yandex}{Moscow, Russia}
+  {Extra classes for learning advanced algorithms and data structures}{2023-2024}
+
+}
+
+% -------------------- PROJECTS --------------------
+% \sectionBlock{
+% \section{Projects}
+% }{
+% \projHeading
+% {\textbf{Advanced Optimization Techniques for Smart Grid Management}}
+% {National Natural Science Foundation of China (NSFC)} {2023.01 - 2024.01}
+
+% \projHeading
+% {\textbf{Optimizing Urban Traffic Flow Using AI-Based Predictive Models}}
+% {Smart Transportation Innovations Grant} {2021.12 - 2022.12}.
+% }
+
+% -------------------- INTERNSHIPS --------------------
+% \sectionBlock{
+% \section{Internships}
+% }{
+% \internHeading
+%   {ABC Tech Ltd.}{Shanghai, China}{2024.01 - 2024.06}
+% \itemListStart
+%   \myItem{Develop engaging content for social media platforms.}
+%   \myItem{Prepare reports and presentations summarizing research findings.}
+% \itemListEnd
+% \internHeading
+%   {XYZ Tech Inc.}{Shanghai, China}{2023.07 - 2023.12}
+% \itemListStart
+%   \myItem{Develop engaging content for social media platforms.}
+%   \myItem{Prepare reports and presentations summarizing research findings.}
+% \itemListEnd
+% }
+
+% -------------------- AWARDS & HONORS --------------------
+\sectionBlock{
+\section{Awards\\and\\Honors}
+}{
+\awardListStart
+\justifying
+\item \emph{Prize winner}, Russian National Olympiad in Informatics \hfill 2024
+\item \emph{Honorable mention}, 2025 ICPC Southeastern Europe Regional Contest \hfill 2024
+\item \emph{First place}, International Team Programming Olympiad “Almaty Code Cup”, \hfill 2024
+\item \emph{II degree diploma}, Russian National Team Olympiad in Informatics \hfill 2023/24
+\awardListEnd
+}
+
+% -------------------- SKILLS --------------------
+\sectionBlock{
+\section{Skills}
+}{
+\skillListStart
+\justifying
+\item \emph{Languages}: Russian (native), English (B2 level).
+\item \emph{Python}: {\Courier \fontsize{11pt}{11pt}\selectfont scikit-learn}, {\Courier \fontsize{11pt}{11pt}\selectfont PyTorch}, {\Courier \fontsize{11pt}{11pt}\selectfont NumPy}, {\Courier \fontsize{11pt}{11pt}\selectfont Pandas}.
+\item \emph{C++, Java}: good foundation.
+\item \emph{Haskell, Prolog}: basic knowledge.
+\item \emph{Algorithms and data structures}: advanced knowledge.
+\item \emph{Math}: Group theory, Calculus, Discrete Maths, Linear algebra, Combinatorics.
+\item \emph{CodeForces}: Handle - RomkaRS, current ELO - 2323.
+\skillListEnd
+}
+
+% -------------------- OTHERS --------------------
+% \sectionBlock{
+% \section{Academic Services}
+% }{
+% \skillListStart
+% \justifying
+% \item \emph{Reviewers for}: \textit{Journal of Operations Research and Optimization},
+% \item \phantom{\emph{Reviewers for}:} \textit{International Conference on Optimization and Machine Learning},
+% \item \phantom{\emph{Reviewers for}:} \;...
+% \skillListEnd
+% }
+
+\end{document}
+
