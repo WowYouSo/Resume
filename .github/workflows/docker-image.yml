@@ -21,7 +21,7 @@ jobs:
       run: docker run --rm resume-builder
 
     - name: Upload built PDF artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: resume-pdf
         path: ./CV/main.pdf
